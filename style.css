@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(108, 150, 240);
+}
+
+.card {
+    width: 100rem;
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 23px;
+}
