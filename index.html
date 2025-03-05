@@ -16,34 +16,70 @@
       Payment form example
     </div>
     <form class="row g-3 needs-validation m-0" novalidate>
+      <div class="col-md-12">
+        <div class="alert alert-danger" role="alert">
+          Some fields are missing
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="validationCustom06" class="form-label">Card #</label>
+        <input type="number" class="form-control" id="validationCustom06"  required placeholder="XXXXXXXXXXXXXXXX">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please provide a valid card number.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom07" class="form-label">CVC #</label>
+        <input type="number" class="form-control" id="validationCustom07" required placeholder="000">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please provide a CVC.
+        </div>
+      </div>
       <div class="col-md-4">
+        <label for="validationCustom08" class="form-label">Amount</label>
+        <div style="display: flex; align-items: center;">
+          <i class="fa-solid fa-dollar-sign"></i><input type="number" class="form-control" id="validationCustom08"  required placeholder="Amount">
+        </div>
+        
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please provide a valid card number.
+        </div>
+      </div>
+      <div class="col-md-6">
         <label for="validationCustom01" class="form-label">First name</label>
-        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+        <input type="text" class="form-control" id="validationCustom01"  required>
         <div class="valid-feedback">
           Looks good!
         </div>
+        <div class="invalid-feedback">
+          Please provide a first name.
+        </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <label for="validationCustom02" class="form-label">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+        <input type="text" class="form-control" id="validationCustom02" required>
         <div class="valid-feedback">
           Looks good!
         </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustomUsername" class="form-label">Username</label>
-        <div class="input-group has-validation">
-          <span class="input-group-text" id="inputGroupPrepend">@</span>
-          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
-            required>
-          <div class="invalid-feedback">
-            Please choose a username.
-          </div>
+        <div class="invalid-feedback">
+          Please provide a last name.
         </div>
       </div>
       <div class="col-md-6">
         <label for="validationCustom03" class="form-label">City</label>
         <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
         <div class="invalid-feedback">
           Please provide a valid city.
         </div>
@@ -54,27 +90,43 @@
           <option selected disabled value="">Choose...</option>
           <option>...</option>
         </select>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
         <div class="invalid-feedback">
           Please select a valid state.
         </div>
       </div>
       <div class="col-md-3">
-        <label for="validationCustom05" class="form-label">Zip</label>
+        <label for="validationCustom05" class="form-label">Postal Code</label>
         <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
         <div class="invalid-feedback">
           Please provide a valid zip.
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-md-6 d-flex">
+        
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Agree to terms and conditions
-          </label>
-          <div class="invalid-feedback">
-            You must agree before submitting.
-          </div>
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck2"><i class="fa-brands fa-cc-mastercard"></i></label>
         </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck2"><i class="fa-brands fa-cc-visa"></i></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck2"><i class="fa-brands fa-cc-diners-club"></i></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+          <label class="form-check-label" for="validationFormCheck3"><i class="fa-brands fa-cc-amex"></i></label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+
       </div>
       <div class=" card-footer d-flex justify-content-end">
         <button class="btn btn-secondary" type="reset">Cancel</button>
@@ -84,10 +136,12 @@
   </div>
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     <script src="/index.js"></script>
+    <script src="https://kit.fontawesome.com/bf8bf3ada3.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
